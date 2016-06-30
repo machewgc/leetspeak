@@ -22,4 +22,16 @@ public class PingPongTest {
     expected.add("ping");
     assertEquals(expected, testPingPong.pingPong(3));
   }
+
+  @Test
+  public void pingPong_forNumberDivisibleByFive_OneTwoPingFourPong() {
+    PingPong testPingPong = new PingPong();
+    ArrayList<Object> expected = new ArrayList<Object>();
+    expected.add(1);
+    expected.add(2);
+    expected.add("ping");
+    expected.add(4);
+    expected.add("pong");
+    assertEquals(expected, testPingPong.pingPong(5));
+  }
 }
