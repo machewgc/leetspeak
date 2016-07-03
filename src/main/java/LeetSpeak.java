@@ -5,6 +5,6 @@ public class LeetSpeak {
 
   }
   public static String leetSpeak(String stringInput) {
-    return "";
+    return stringInput;
   }
 }
