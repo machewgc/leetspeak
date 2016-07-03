@@ -13,6 +13,13 @@ public class LeetSpeakTest {
   @Test
   public void leetSpeak_forLetterEInWord_ReplaceWith3(){
     LeetSpeak testLeetSpeak = new LeetSpeak();
-    assertEquals("3cho", leetSpeakTest.leetSpeak("Echo"));
+    assertEquals("3cho", testLeetSpeak.leetSpeak("Echo"));
   }
+
+  @Test
+  public void leetSpeak_forLetterOInWord_ReplaceWith0() {
+    LeetSpeak testLeetSpeak = new LeetSpeak();
+    assertEquals("0rang3", testLeetSpeak.leetSpeak("Orange"));
   }
+
+}
