@@ -9,7 +9,9 @@ public class LeetSpeak {
     char[] charsOutput = new char[stringInputLength];
 
     for (Integer i = 0; i < stringInput.length(); i++) {
-      if (charsInput[i] == 'O' || charsInput[i] == 'o') {
+      if (charsInput[i] == 'L') {
+        charsOutput[i] = '1';
+      } else if (charsInput[i] == 'O' || charsInput[i] == 'o') {
         charsOutput[i] = '0';
       } else if (charsInput[i] == 'E' || charsInput[i] == 'e') {
         charsOutput[i] = '3';
