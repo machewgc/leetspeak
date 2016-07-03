@@ -22,4 +22,9 @@ public class LeetSpeakTest {
     assertEquals("0rang3 0rang3", testLeetSpeak.leetSpeak("Orange Orange"));
   }
 
+  @Test
+  public void leetSpeak_forCapitalLInPhrase_RelpaceWith1() {
+    LeetSpeak testLeetSpeak = new LeetSpeak();
+    assertEquals("W3'r3 numb3r 313v3n" ,testLeetSpeak.leetSpeak("We're number eleven"));
+  }
 }
