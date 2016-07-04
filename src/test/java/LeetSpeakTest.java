@@ -19,12 +19,18 @@ public class LeetSpeakTest {
   @Test
   public void leetSpeak_forLetterOInWord_ReplaceWith0() {
     LeetSpeak testLeetSpeak = new LeetSpeak();
-    assertEquals("0rang3 0rang3", testLeetSpeak.leetSpeak("Orange Orange"));
+    assertEquals("0rang3 0rang3", testLeetSpeak.leetSpeak("orange orange"));
   }
 
   @Test
   public void leetSpeak_forCapitalLInPhrase_RelpaceWith1() {
     LeetSpeak testLeetSpeak = new LeetSpeak();
     assertEquals("W3'r3 numb3r 313v3n" ,testLeetSpeak.leetSpeak("We're number eLeven"));
+  }
+
+  @Test
+  public void leetSpeak_forAllExceptFirstInstancesOfS_RelpaceWithZ() {
+    LeetSpeak testLeetSpeak = new LeetSpeak();
+    assertEquals("S0m3thingz z0m3thing" ,testLeetSpeak.leetSpeak("Somethings something"));
   }
 }
